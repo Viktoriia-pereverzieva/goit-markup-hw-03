@@ -18,16 +18,25 @@ ul {
 
 }
 
+.img {
+    display: block;
+}
+
 
 .header .container { 
     display: flex;
     justify-content: space-between;
-    margin: 24px 156px;
+    border-bottom: 1px solid #E7E9FC;
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+    align-items: center;
 }
 
 .nav {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .nav .web {
@@ -39,6 +48,7 @@ ul {
     text-transform: uppercase;
     color: #4d5ae5;
     text-decoration: none;
+    margin-right: 76px;
 
 }
 
@@ -46,12 +56,14 @@ ul {
     list-style: none;
     display: flex;
     flex-direction: row;
+    gap: 40px;
     
 }
 
 .nav .stud {
     color: #2e2f42;
     padding-right: 76px;
+    align-items: center;
 }
 
 .nav-list .link {
@@ -69,7 +81,6 @@ ul {
     color: #404BBF;
 }
 
-
 .addres {
     font-style: normal;
 }
@@ -77,6 +88,7 @@ ul {
 .addres .connect {
     display: flex;
     flex-direction: row;
+    gap: 40px;
 }
 
 
@@ -110,17 +122,20 @@ ul {
     justify-content: center;
     align-items: center;
     padding: 188px 472px;
+    padding: 188px 0 188px 0;
 }
 
 .container .htitle {
+    max-width: 496px;
     padding-bottom: 48px;
 }
 
 .container .button {
-    width: 178px;
+    max-width: 169px;
     height: 56px;
-    border-radius: 4%;
+    border-radius: 4px;
     overflow: hidden;
+    border: none;
 }
 
 
@@ -154,32 +169,48 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding: 120 px 0 120px 0;
 }
+
+.visually-hidden {
+    position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+}
+
 
 .container .none {
     display: none;    
 }
 
-.container .main-list {
-    list-style: none;
+.main-list {
     display: flex;
-    padding: 120px 156px;
-    padding-right: 24px;
+    list-style: none;
+    padding: 120px 0 120px 0;
+    gap: 24px;
+
 }
 
 .main-list .parag {
     padding: 0;
     width: 264px;
     height: 104px;
-    gap: 8px;
+    width: calc((100%-3*24px)/4);
+    
 }
 
-.main .functions {
+.parag .functions {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    margin-bottom: 8px;
+    
+    
 }
 
 .main-p {
@@ -197,18 +228,18 @@ ul {
 
 .team .container {
 
-    padding: 120px 156px;
-
+    padding: 120px 0 120px 0;
 }
 
 .container .our-team {
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .our-t-list {
   list-style: none;
   display: flex;
   justify-content: center;
+  gap: 24px;
 }
 
 .our-t-list .team-list {
@@ -229,6 +260,8 @@ ul {
     background-color: #FFFFFF;
     width: 264px;
     height: 380px;
+    width: calc(100%-3*24px)/4;
+    border-radius: 0 0 4px 4px;
 }
 
 .team-name .name-team {
@@ -239,7 +272,7 @@ ul {
     padding: 0 68px 32px 68px;
 }
 
-.team-list .name-team {
+.descr .name-team {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -249,7 +282,7 @@ ul {
 }
 
 
-.position-team {
+.descr .position-team {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -259,7 +292,7 @@ ul {
 }
 
 .portf .container {
-    padding: 120px 156px;
+    padding: 120px 0 120px 0;
 }
  
 .our-p-list {
@@ -267,9 +300,9 @@ ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    row-gap: 24px;
-    column-gap: 48px;
-    padding: 72px 156px 120px 156px;
+    column-gap: 24px;
+    row-gap: 48px;
+    
 }
 
 .our-portf {
@@ -279,14 +312,20 @@ ul {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2E2F42;
-    text-transform: capitalize
+    text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
 .our-p-list .choice-portf {
-    width: calc(( 100% - 48px) / 3 );
+    width: calc((100%-48px)/3);
+   
 }
 
-
+.choice-portf .name {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
 
 .service-portf {
     font-weight: 500;
@@ -294,6 +333,7 @@ ul {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    margin-bottom: 8px;
 }
 
 .choice-portf .descr-portf {
@@ -316,13 +356,13 @@ footer {
     flex-direction: column;
     justify-content: flex-start;
     width: 264px;
-    padding-top: 100px;
-    padding-bottom: 101px;
-    padding-left: 147px;
+    padding: 100px 0 100px 0;
 }
 
 .container .web {
     padding-bottom: 15px; 
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer .web {
