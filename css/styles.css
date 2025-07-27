@@ -26,12 +26,16 @@ img {
     border-bottom: 1px solid #e7e9fc;
 }
 
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
 .header .container { 
     display: flex;
     justify-content: space-between;
-    width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px 0 15px;
+   
     align-items: center;
 }
 
@@ -193,14 +197,12 @@ img {
     list-style: none;
     gap: 24px;
     flex-direction: row;
-    max-width: 1158px;
-    padding: 0 15px;
 }
 
 .main-list .parag {
     padding: 0;
     width: 264px;
-    width: calc((100% - 72px)/4);
+    width: calc((100% - 72px) / 4);
 }
 
 .parag .functions {
@@ -242,7 +244,7 @@ img {
 .our-t-list .team-list {
     width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
-     background-color: #FFFFFF;
+    background-color: #FFFFFF;
     width: 264px;
 }
 
@@ -282,11 +284,7 @@ img {
     padding: 120px 0;
 }
 
-.portf .container {
-    max-width: 1158px;
-    padding: 0 15px;
-    margin: 0 auto;
-}
+
 
 .our-p-list {
     list-style: none;
@@ -347,8 +345,6 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 264px;
-   
 }
 
 .container .web {
@@ -376,4 +372,5 @@ footer {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #F4F4FD;
+    max-width: 264px;
 }
