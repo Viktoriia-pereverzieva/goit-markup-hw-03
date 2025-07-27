@@ -18,15 +18,17 @@ ul {
 
 }
 
-.img {
+img {
     display: block;
 }
 
+.header {
+    border-bottom: 1px solid #e7e9fc;
+}
 
 .header .container { 
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #E7E9FC;
     width: 1158px;
     margin: 0 auto;
     padding: 0 15px 0 15px;
@@ -49,6 +51,7 @@ ul {
     color: #4d5ae5;
     text-decoration: none;
     margin-right: 76px;
+    padding: 24px 0;
 
 }
 
@@ -73,7 +76,7 @@ ul {
     letter-spacing: 0.02em;
     color: #2E2F42;
     text-decoration: none;
-    padding: 0 40px 0 0;
+    padding: 0 24px 0 24px;
 }
 
 .nav-list .link:hover,
@@ -122,7 +125,7 @@ ul {
     justify-content: center;
     align-items: center;
     padding: 188px 472px;
-    padding: 188px 0 188px 0;
+    padding: 188px 0;
 }
 
 .container .htitle {
@@ -131,7 +134,7 @@ ul {
 }
 
 .container .button {
-    max-width: 169px;
+    min-width: 169px;
     height: 56px;
     border-radius: 4px;
     overflow: hidden;
@@ -169,10 +172,10 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 120 px 0 120px 0;
+    padding: 120 px 0;
 }
 
-.visually-hidden {
+.container .visually-hidden {
     position: absolute;
         width: 1px;
         height: 1px;
@@ -182,9 +185,6 @@ ul {
 }
 
 
-.container .none {
-    display: none;    
-}
 
 .main-list {
     display: flex;
@@ -227,8 +227,7 @@ ul {
 }
 
 .team .container {
-
-    padding: 120px 0 120px 0;
+    padding: 120px 0;
 }
 
 .container .our-team {
@@ -244,6 +243,8 @@ ul {
 
 .our-t-list .team-list {
     padding-right: 24px;
+    width: calc(100%-3*24px)/4;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .our-team {
@@ -260,16 +261,12 @@ ul {
     background-color: #FFFFFF;
     width: 264px;
     height: 380px;
-    width: calc(100%-3*24px)/4;
-    border-radius: 0 0 4px 4px;
+    
 }
+    
 
-.team-name .name-team {
-    padding: 32px 16px 8px 16px;
-}
-
-.team-name .position-team {
-    padding: 0 68px 32px 68px;
+.team-name .descr {
+    padding: 32px 0;
 }
 
 .descr .name-team {
@@ -279,6 +276,7 @@ ul {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2E2F42;
+    margin-bottom: 8px;
 }
 
 
@@ -292,7 +290,7 @@ ul {
 }
 
 .portf .container {
-    padding: 120px 0 120px 0;
+    padding: 120px 0;
 }
  
 .our-p-list {
@@ -349,6 +347,7 @@ ul {
 
 footer {
     background-color: #2E2F42;
+    padding: 100px 0;
 }
 
 .footer .container {
@@ -356,7 +355,7 @@ footer {
     flex-direction: column;
     justify-content: flex-start;
     width: 264px;
-    padding: 100px 0 100px 0;
+   
 }
 
 .container .web {
