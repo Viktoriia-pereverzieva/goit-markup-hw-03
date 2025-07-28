@@ -347,7 +347,7 @@ footer {
     justify-content: flex-start;
 }
 
-.container .one-part {
+.footer .container .one-part {
     display: inline-block;
     margin-bottom: 16px;
     font-family: "Raleway", sans-serif;
@@ -360,8 +360,9 @@ footer {
     text-decoration: none;
 }
 
-.footer .two-part {
-    color: #f4f4fd;
+.footer .container .two-part {
+    color: #f4f4fd; 
+    display: inline-block;
 }
 
 
