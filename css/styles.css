@@ -341,11 +341,6 @@ footer {
     padding: 100px 0;
 }
 
-.footer .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
 
 .footer .container .one-part {
     display: inline-block;
